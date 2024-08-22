@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #282829;
+    border: none;
+    color: white;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    vertical-align: top; 
+    height: 500px; /* Atur tinggi sel jika diperlukan */
+}
+
+.isi {
+    width: 70%; /* Atur lebar kolom untuk .isi */
+}
+
+h1, h3 {
+    margin: 0; 
+}
+
+p {
+    margin: 10px 0; 
+}
+
+pre {
+    padding: 10px; /* Padding di sekitar kode */
+    overflow-x: auto; /* Scroll horizontal jika kode terlalu lebar */
+    white-space: pre-wrap; /* Menjaga spasi dan baris baru dalam kode */
+    margin: 20px 0; /* Margin atas dan bawah untuk pemisahan */
+}
+
+code {
+    font-family: monospace; /* Menggunakan font monospaced untuk kode */
+}
+
+ul li {
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+}
