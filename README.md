@@ -37,11 +37,11 @@ Proyek ini dibimbing oleh **Ibu Widya**, guru produktif RPL di SMKN 1 Sukorejo. 
 3. Konfigurasikan koneksi database di file config PHP.
 4. Jalankan server lokal (misalnya, XAMPP atau MAMP) dan akses website melalui browser.
 
-💡 Kontribusi
+## 💡 Kontribusi
 
 Kami terbuka untuk kontribusi dari siswa maupun pengembang lainnya untuk meningkatkan website ini. Jika Anda memiliki ide, saran, atau menemukan bug, silakan laporkan issue.
 
-📧 Kontak
+## 📧 Kontak
 Untuk informasi lebih lanjut, Anda dapat menghubungi kami:
 
 Nama Kelompok: R&B Tech
