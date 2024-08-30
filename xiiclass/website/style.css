@@ -1,0 +1,65 @@
+/* Reset margin and padding for a consistent look */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border do not add to width */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #282829;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* Max width to prevent overly wide content */
+    margin: 0 auto;
+}
+
+section {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+pre {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    margin: 20px 0;
+    border: 1px solid #444;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    text-align: justify;
+}

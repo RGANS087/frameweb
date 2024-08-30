@@ -1,0 +1,88 @@
+/* Reset margin and padding for a consistent look */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memastikan padding dan border dimasukkan dalam ukuran elemen */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #f1f1f1; /* Menyesuaikan warna h3 agar lebih konsisten dengan tema */
+}
+
+pre {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    margin: 15px 0;
+    border: 1px solid #444;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.img {
+    display: block; /* Membuat gambar sebagai elemen block */
+    margin: 0 auto; /* Menempatkan gambar di tengah secara horizontal */
+    margin-bottom: 10px;
+    border-radius: 15px; /* Membuat sudut gambar melengkung */
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #dcdcdc; /* Warna teks kode agar sesuai dengan tema gelap */
+}
