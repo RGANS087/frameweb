@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.dash {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 1.8%;
+}
+
+.head {
+    background-color: rgb(49, 49, 49);
+    margin: 0;
+    padding: 30px 0; /* Menambah padding vertikal */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Memisahkan konten ke kiri dan kanan */
+    align-items: center; /* Memastikan item sejajar secara vertikal */
+}
+
+.logout {
+    margin-right: 1.8%; /* Jarak dari sisi kanan */
+}
+
+.logout-button {
+    color: white;
+    text-decoration: none;
+    font-size: x-large; /* Atur ukuran font sesuai kebutuhan */
+}
+
+.logout-button:hover {
+    text-decoration: underline; /* Efek hover */
+}
+
+.body {
+    margin-top: 1.2%;
+    margin-left: 1.4%;
+}

@@ -2,20 +2,15 @@
 include '../login/config.php';
 session_start();
 
-// Pastikan ada sesi aktif
 if ($_SESSION['role'] == 'admin') {
     $username = $_SESSION['username'];
 
-    // Hapus sesi dari tabel aktif
     $stmt_delete = $conn->prepare("DELETE FROM adminac WHERE username = ?");
     $stmt_delete->bind_param("s", $username);
     $stmt_delete->execute();
     
-    // Hapus variabel sesi
     session_unset();
     session_destroy();
-    
-    // Redirect ke halaman login
     header("Location: ../");
     exit();
 } 
@@ -23,23 +18,20 @@ if ($_SESSION['role'] == 'admin') {
 elseif ($_SESSION['role'] == 'user') {
     $username = $_SESSION['username'];
 
-    // Hapus sesi dari tabel aktif
     $stmt_delete = $conn->prepare("DELETE FROM aktif WHERE username = ?");
     $stmt_delete->bind_param("s", $username);
     $stmt_delete->execute();
     
-    // Hapus variabel sesi
     session_unset();
     session_destroy();
     
-    // Redirect ke halaman login
-    header("Location: ../");
+    header("Location: ../error");
     exit();
 }
 
 else {
     // Jika tidak ada sesi, redirect ke halaman login
-    header("Location: index.php");
+    header("Location: ../error");
     exit();
 }
 ?>

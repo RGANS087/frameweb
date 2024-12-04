@@ -13,8 +13,6 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Kelas 12 SMK</title>
-
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <style>
  /* Reset margin and padding for a consistent look */
 * {
@@ -89,6 +87,7 @@ code {
 
 
     </style>
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
 </head>
 <body>
 <header>

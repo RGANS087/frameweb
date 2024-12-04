@@ -1,6 +1,29 @@
 <?php
-include '../login/config.php';
+include './login/config.php';
 session_start();
+
+if (!isset($_SESSION['role'])) {
+    echo "
+    <html>
+    <head>
+        <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    </head>
+    <body>
+        <script>
+            Swal.fire({
+                title: 'Oops!',
+                text: 'Anda belum login',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            }).then(function() {
+                window.location.href = 'index.html';
+            });
+        </script>
+    </body>
+    </html>";
+    exit();
+}
+
 
 // Pastikan ada sesi aktif
 if ($_SESSION['role'] == 'admin') {
@@ -33,13 +56,13 @@ elseif ($_SESSION['role'] == 'user') {
     session_destroy();
     
     // Redirect ke halaman login
-    header("Location: ../");
+    header("Location: ./login");
     exit();
 }
 
 else {
     // Jika tidak ada sesi, redirect ke halaman login
-    header("Location: index.php");
+    header("Location: ./login");
     exit();
 }
 ?>

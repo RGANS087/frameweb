@@ -14,7 +14,7 @@ if (!isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Kelas 11 SMK</title>
     <link rel="stylesheet" href="style.css"> <!-- Tautkan ke file CSS -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
 </head>
 <body>
     <header>

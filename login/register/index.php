@@ -56,11 +56,11 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
     <title>Register</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="background-color: rgba(255, 255, 255, .15); backdrop-filter: blur(5px);">
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
             <div class="input-group">
@@ -70,7 +70,8 @@ $conn->close();
                 <input type="email" placeholder="Email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? '', ENT_QUOTES); ?>" required>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Password" name="password" id="password" required>
+                <i class="fa fa-eye" id="eye" style="cursor: pointer;"></i>
             </div>
             <div class="input-group">
                 <input type="password" placeholder="Confirm Password" name="cpassword" required>
@@ -115,6 +116,16 @@ $conn->close();
         });";
     }
     ?>
+
+const eyeIcon = document.getElementById('eye');
+        const passwordInput = document.getElementById('password');
+
+        eyeIcon.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
     </script>
 </body>
 </html>

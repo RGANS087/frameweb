@@ -12,6 +12,7 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
     <title>Materi Kelas 12 SMK</title>
     <style>
 /* Reset margin and padding for a consistent look */
@@ -89,7 +90,6 @@ code {
     font-family: 'Courier New', Courier, monospace;
 }
     </style>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
 <header>
